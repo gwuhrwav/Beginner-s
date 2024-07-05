@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css-animation</title>
+    <style>
+        .container{
+            height: 50vh;
+            width: 50vw;
+            background-color: red;
+        }
+
+        .box1{
+            height: 10vh;
+            width: 10vw;
+            background-color: blue; 
+            animation-name: hello;
+            animation-duration: 4s ;
+            animation-iteration-count: infinite;
+            border-radius: 10px;
+
+        }
+        
+
+        @keyframes hello {
+            
+                0%{ 
+                    transform: rotate(180deg);
+                }                
+                20%{
+                    transform: rotate(220deg);
+                }
+                50%{
+                    transform: rotate(290deg);
+                }
+                70%{
+                    transform: rotate(320deg);
+                }
+                100%{
+                    transform: rotate(390deg);
+                }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+    </div>
+</body>
+</html>
